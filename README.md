@@ -1,3 +1,7 @@
+<p align="center">
+ <img width="1049" height="587" alt="image" src="https://github.com/user-attachments/assets/a05be72f-3e4e-4ad3-8bf3-1750391d8dca" />
+</p>
+
 # 🛡️ NOSBOR Security System
 
 <p align="center">
