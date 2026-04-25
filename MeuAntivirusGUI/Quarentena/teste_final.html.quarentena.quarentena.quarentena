@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Especial</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; margin: 0; background-color: #f0f2f5; }
+        
+        /* Tela de Propaganda */
+        #tela-propaganda { padding: 50px 20px; }
+        .card-oferta { background: white; max-width: 400px; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; }
+        .banner { background: #ff4757; color: white; padding: 20px; font-weight: bold; font-size: 24px; }
+        .conteudo { padding: 20px; }
+        .btn-comprar { background: #2ed573; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; }
+        .btn-comprar:hover { background: #26af5f; }
+
+        /* Tela do Formulário (Inicia escondida) */
+        #tela-formulario { display: none; padding: 50px 20px; }
+        form { background: white; padding: 30px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 350px; }
+        input { display: block; margin: 15px auto; padding: 12px; width: 90%; border: 1px solid #ddd; border-radius: 5px; }
+        
+        /* Lista de Dados */
+        #lista-dados { margin-top: 30px; max-width: 400px; margin-left: auto; margin-right: auto; text-align: left; }
+        .item { background: #fff; padding: 10px; margin: 5px 0; border-left: 5px solid #2ed573; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <div id="tela-propaganda">
+        <div class="card-oferta">
+            <div class="banner">OFERTA EXCLUSIVA!</div>
+            <div class="conteudo">
+                <h3>iPhone 15 Pro Max</h3>
+                <p>De <strike>R$ 9.999</strike> por apenas</p>
+                <h2 style="color: #2ed573;">R$ 1.990,00</h2>
+                <p style="font-size: 12px; color: #777;">Promoção válida por tempo limitado.</p>
+                <button class="btn-comprar" id="btn-acessar-form">EU QUERO AGORA!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="tela-formulario">
+        <h2>Finalizar Cadastro</h2>
+        <p>Insira os dados para garantir sua reserva.</p>
+        
+        <form id="meuFormulario">
+            <input type="text" id="nome" placeholder="Nome Completo" required>
+            <input type="text" id="cartao" placeholder="Número do Cartão (Simulado)" required>
+            <button type="submit" class="btn-comprar">Confirmar Reserva</button>
+        </form>
+
+        <div id="lista-dados">
+            <div id="itens"></div>
+        </div>
+    </div>
+
+    <script>
+        const telaPropaganda = document.getElementById('tela-propaganda');
+        const telaFormulario = document.getElementById('tela-formulario');
+        const btnAcessar = document.getElementById('btn-acessar-form');
+        const formulario = document.getElementById('meuFormulario');
+        const listaItens = document.getElementById('itens');
+
+        // Lógica para trocar de tela
+        btnAcessar.addEventListener('click', function() {
+            telaPropaganda.style.display = 'none'; // Esconde a propaganda
+            telaFormulario.style.display = 'block'; // Mostra o formulário
+        });
+
+        // Lógica para capturar o formulário
+        formulario.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const cartao = document.getElementById('cartao').value;
+
+            // Criar item na lista
+            const div = document.createElement('div');
+            div.className = 'item';
+            div.innerHTML = `<strong>Nome:</strong> ${nome} | <strong>Info:</strong> ${cartao}`;
+            
+            listaItens.appendChild(div);
+
+            alert('Dados registrados na lista abaixo!');
+            formulario.reset();
+        });
+    </script>
+
+</body>
+</html>

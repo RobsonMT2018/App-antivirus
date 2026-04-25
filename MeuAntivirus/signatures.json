@@ -1,0 +1,62 @@
+{
+  "malware_signatures": [
+    {
+      "name": "WannaCry-Clone",
+      "type": "Ransomware",
+      "hash": "ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa",
+      "severity": "Critical",
+      "description": "Criptografa arquivos do usuário.",
+      "comment": "Ransomware sequestra dados usando criptografia forte e exige pagamento (geralmente Bitcoin) para liberar a chave de decriptação."
+    },
+    {
+      "name": "Spy-Keylogger",
+      "type": "Spyware",
+      "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "severity": "High",
+      "description": "Captura teclas digitadas pelo usuário.",
+      "comment": "Keyloggers monitoram a entrada do teclado para roubar credenciais de login, números de cartão de crédito e conversas privadas."
+    },
+    {
+      "name": "Emotet-Botnet",
+      "type": "Trojan/Botnet",
+      "hash": "d241d9990885e33d02b9e6e8e8156157f18544a49c664b58e7274070e1762c47",
+      "severity": "Critical",
+      "description": "Transforma o PC em um 'zumbi'.",
+      "comment": "Botnets conectam o PC a uma rede controlada por hackers para disparar spam, ataques de negação de serviço (DDoS) ou espalhar mais malware."
+    },
+    {
+      "name": "RedLine-Stealer",
+      "type": "Infostealer",
+      "hash": "4a5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f",
+      "severity": "Critical",
+      "description": "Rouba senhas salvas no navegador.",
+      "comment": "Infostealers vasculham arquivos de sistema e navegadores para extrair senhas, cookies de sessão e carteiras de criptomoedas."
+    },
+    {
+      "name": "Adware.Opener",
+      "type": "Adware",
+      "hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+      "severity": "Low",
+      "description": "Exibe anúncios invasivos.",
+      "comment": "Adwares infectam o navegador para forçar a exibição de propagandas, gerando lucro para o atacante e lentidão para o usuário."
+    },
+    {
+      "name": "NetBus-Backdoor",
+      "type": "Backdoor",
+      "hash": "1e9f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f",
+      "severity": "High",
+      "description": "Acesso remoto não autorizado.",
+      "comment": "Backdoors criam uma 'porta dos fundos' no sistema, permitindo que o hacker controle o computador remotamente sem ser notado."
+    },
+    {
+      "name": "CoinMiner.XMRig",
+      "type": "Miner",
+      "hash": "6b3604f323e06180374f107386d73507d4b4a6828555e09a32c25389d4692c3a",
+      "severity": "Medium",
+      "description": "Usa o PC para minerar criptomoedas.",
+      "comment": "Cryptojacking consome 100% da CPU/GPU para minerar moedas como Monero, causando superaquecimento e desgaste do hardware."
+    },
+
+     { "name": "Spy-Keylogger", "type": "Spyware", "hash": " =", "severity": "High" }
+  ]
+}
