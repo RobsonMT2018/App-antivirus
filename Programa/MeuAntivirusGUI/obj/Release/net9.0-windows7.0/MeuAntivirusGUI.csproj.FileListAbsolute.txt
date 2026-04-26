@@ -1,0 +1,5 @@
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Release\net9.0-windows7.0\MeuAntivirusGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Release\net9.0-windows7.0\MeuAntivirusGUI.AssemblyInfoInputs.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Release\net9.0-windows7.0\MeuAntivirusGUI.AssemblyInfo.cs
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Release\net9.0-windows7.0\MeuAntivirusGUI.csproj.CoreCompileInputs.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Release\net9.0-windows7.0\MeuAntivirusGUI.sourcelink.json

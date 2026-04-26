@@ -1,0 +1,7 @@
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Debug\net8.0-windows8.0\MeuAntivirusGUI.Form1.resources
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Debug\net8.0-windows8.0\MeuAntivirusGUI.csproj.GenerateResource.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Debug\net8.0-windows8.0\MeuAntivirusGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Debug\net8.0-windows8.0\MeuAntivirusGUI.AssemblyInfoInputs.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Debug\net8.0-windows8.0\MeuAntivirusGUI.AssemblyInfo.cs
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Debug\net8.0-windows8.0\MeuAntivirusGUI.csproj.CoreCompileInputs.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirusGUI\obj\Debug\net8.0-windows8.0\MeuAntivirusGUI.sourcelink.json

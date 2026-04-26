@@ -1,0 +1,5 @@
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net9.0-windows8.0\MeuAntivirus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net9.0-windows8.0\MeuAntivirus.AssemblyInfoInputs.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net9.0-windows8.0\MeuAntivirus.AssemblyInfo.cs
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net9.0-windows8.0\MeuAntivirus.csproj.CoreCompileInputs.cache
+C:\Users\Robson\OneDrive - SENAC - SP\Área de Trabalho\Projeto Antivirus\MeuAntivirus\obj\Debug\net9.0-windows8.0\MeuAntivirus.sourcelink.json

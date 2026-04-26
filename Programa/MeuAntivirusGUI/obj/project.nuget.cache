@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "W9vDw3+zgp8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Robson\\OneDrive - SENAC - SP\\Área de Trabalho\\Projeto Antivirus\\MeuAntivirusGUI\\MeuAntivirusGUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Robson\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.14\\microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\Robson\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.14\\microsoft.windowsdesktop.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\Robson\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.14\\microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\Robson\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.14\\microsoft.netcore.app.host.win-x64.9.0.14.nupkg.sha512",
+    "C:\\Users\\Robson\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.57\\microsoft.windows.sdk.net.ref.10.0.17763.57.nupkg.sha512"
+  ],
+  "logs": []
+}
