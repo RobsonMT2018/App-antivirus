@@ -1,7 +1,7 @@
 @echo off
 cls
 echo ======================================================
-echo           INSTALADOR E EXECUTOR - ANTIVIRUS ROBSON
+echo           INSTALADOR E EXECUTOR - ANTIVIRUS NOSBOR
 echo                EDICAO UBUNTU SECURITY (C#)
 echo ======================================================
 echo.

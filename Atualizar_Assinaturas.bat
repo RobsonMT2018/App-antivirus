@@ -1,7 +1,7 @@
 @echo off
 cls
 echo ======================================================
-echo          GERADOR DE ASSINATURAS - ANTIVIRUS ROBSON
+echo          GERADOR DE ASSINATURAS - ANTIVIRUS NOSBOR
 echo ======================================================
 echo.
 

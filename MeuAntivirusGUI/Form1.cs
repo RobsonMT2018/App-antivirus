@@ -31,7 +31,7 @@ namespace MeuAntivirusGUI
         Button btnPausar;
         TextBox txtDiretorioFixado;
 
-        Image imgLogo = Image.FromFile("icon.png"); // Certifique-se de que a imagem está na pasta bin/Debug
+        Image imgLogo = Image.FromFile("/icon.png"); // Certifique-se de que a imagem está na pasta bin/Debug
 
         public Form1()
         {
@@ -42,7 +42,7 @@ namespace MeuAntivirusGUI
         private void ConfigurarInterfaceUbuntuFinal()
         {
             // --- JANELA PRINCIPAL ---
-            this.Text = "NOSBOR Security - Antivírus";
+            this.Text = "NR Security - Antivírus";
             this.Size = new Size(680, 720);
             this.BackColor = corFundo;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
