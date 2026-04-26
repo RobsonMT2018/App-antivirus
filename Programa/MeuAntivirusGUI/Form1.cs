@@ -31,12 +31,33 @@ namespace MeuAntivirusGUI
         Button btnPausar;
         TextBox txtDiretorioFixado;
 
-        Image imgLogo = Image.FromFile("icon.svg"); // Certifique-se de que a imagem está na pasta bin/Debug
+        Image imgLogo = SystemIcons.Application.ToBitmap();
 
         public Form1()
         {
             InitializeComponent();
+            CarregarLogo();
             ConfigurarInterfaceUbuntuFinal();
+        }
+
+        private void CarregarLogo()
+        {
+            try
+            {
+                string logoPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "icon.svg");
+                if (File.Exists(logoPath))
+                {
+                    imgLogo = Image.FromFile(logoPath);
+                }
+                else
+                {
+                    imgLogo = SystemIcons.Application.ToBitmap();
+                }
+            }
+            catch
+            {
+                imgLogo = SystemIcons.Application.ToBitmap();
+            }
         }
 
         private void ConfigurarInterfaceUbuntuFinal()
@@ -54,13 +75,16 @@ namespace MeuAntivirusGUI
 
             // Substitua os Labels lblLogoSimulado e lblLetraR por isso:
             PictureBox picLogo = new PictureBox {
-                Image = imgLogo, // Certifique-se de que a imagem está na pasta bin/Debug
+                Image = imgLogo,
                 SizeMode = PictureBoxSizeMode.Zoom,
                 Location = new Point(590, 0),
                 Size = new Size(80, 80),
                 BackColor = Color.Transparent
             };
-            pnlHeader.Controls.Add(picLogo);
+            if (imgLogo != null)
+            {
+                pnlHeader.Controls.Add(picLogo);
+            }
 
             // LOGO (Usando o escudo que criamos)
             Label lblTitulo = new Label { 
@@ -84,7 +108,7 @@ namespace MeuAntivirusGUI
             btnRelatorio.Click += (s, e) => GerarRelatorioTexto();
 
             Button btnLimpar = new Button { Text = "🧹 CLEAR LOG", ForeColor = Color.White, BackColor = Color.FromArgb(44, 62, 80), FlatStyle = FlatStyle.Flat, Location = new Point(325, 10), Size = new Size(130, 40), Font = fntBtn };
-            btnLimpar.Click += (s, e) => { ((ListBox)this.Controls["lstLogs"]).Items.Clear(); };
+            btnLimpar.Click += (s, e) => { ((ListBox)this.Controls["lstLogs"]!).Items.Clear(); };
 
             btnPausar = new Button { Text = "⏸ PAUSE", ForeColor = Color.White, BackColor = Color.FromArgb(255, 82, 82), FlatStyle = FlatStyle.Flat, Location = new Point(465, 10), Size = new Size(130, 40), Font = fntBtn };
             btnPausar.Click += (s, e) => { estaPausado = !estaPausado; btnPausar.Text = estaPausado ? "▶ RESUME" : "⏸ PAUSE"; };
@@ -144,7 +168,7 @@ namespace MeuAntivirusGUI
 
             
 
-            SignatureDatabase db = null;
+            SignatureDatabase? db = null;
             try { if (File.Exists("signatures.json")) db = JsonSerializer.Deserialize<SignatureDatabase>(File.ReadAllText("signatures.json")); } 
             catch { RegistrarLog("[!] Error loading signatures.json"); }
 
@@ -223,7 +247,7 @@ namespace MeuAntivirusGUI
         }
 
         private void RegistrarLog(string msg, Color? cor = null) {
-            var lst = (ListBox)this.Controls["lstLogs"];
+            var lst = (ListBox)this.Controls["lstLogs"]!;
             Color c = cor ?? Color.White;
             this.Invoke(new Action(() => {
                 lst.Items.Add(new LogEntry { Texto = $"[{DateTime.Now:HH:mm:ss}] {msg}", Cor = c });
@@ -231,11 +255,11 @@ namespace MeuAntivirusGUI
             }));
         }
 
-        private void LstLogs_DrawItem(object sender, DrawItemEventArgs e) {
+        private void LstLogs_DrawItem(object? sender, DrawItemEventArgs e) {
             if (e.Index < 0) return;
-            var item = (LogEntry)((ListBox)sender).Items[e.Index];
+            var item = (LogEntry)((ListBox)sender!).Items[e.Index];
             e.DrawBackground();
-            using (SolidBrush b = new SolidBrush(item.Cor)) e.Graphics.DrawString(item.Texto, e.Font, b, e.Bounds);
+            using (SolidBrush b = new SolidBrush(item.Cor)) e.Graphics.DrawString(item.Texto, e.Font!, b, e.Bounds);
         }
 
         private void GerarRelatorioTexto() {
@@ -243,7 +267,22 @@ namespace MeuAntivirusGUI
         }
     }
 
-    public class Malware { public string name { get; set; } public string type { get; set; } public string hash { get; set; } public string severity { get; set; } }
-    public class SignatureDatabase { public List<Malware> malware_signatures { get; set; } }
-    public class LogEntry { public string Texto { get; set; } public Color Cor { get; set; } }
+    public class Malware
+    {
+        public string name { get; set; } = string.Empty;
+        public string type { get; set; } = string.Empty;
+        public string hash { get; set; } = string.Empty;
+        public string severity { get; set; } = string.Empty;
+    }
+
+    public class SignatureDatabase
+    {
+        public List<Malware> malware_signatures { get; set; } = new List<Malware>();
+    }
+
+    public class LogEntry
+    {
+        public string Texto { get; set; } = string.Empty;
+        public Color Cor { get; set; } = Color.White;
+    }
 }

@@ -8,12 +8,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
     <StartupObject>MeuAntivirusGUI.Program</StartupObject>
-    <ApplicationIcon>icon.svg</ApplicationIcon>
-    <NoWin32Manifest>true</NoWin32Manifest>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="icon.svg" />
+    <None Remove="icon.svg" />
+    <Content Remove="icon.svg" />
   </ItemGroup>
+
+  <Target Name="ForceApplicationIcon" BeforeTargets="GenerateApplicationManifest;GenerateResources">
+    <PropertyGroup>
+      <ApplicationIcon>icon.ico</ApplicationIcon>
+    </PropertyGroup>
+  </Target>
 
 </Project>
