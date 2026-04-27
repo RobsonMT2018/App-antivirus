@@ -13,7 +13,7 @@
 ---
 
 ## 📝 Sobre o Projeto
-O **NOSBOR Security System** é uma solução de antivírus leve e customizada desenvolvida em C# (Windows Forms). O projeto foca na detecção de ameaças através de verificação de integridade por Hash (SHA256) e análise heurística básica, apresentando uma interface moderna inspirada na estética do sistema operacional Ubuntu.
+O **NR Security System** é uma solução de antivírus leve e customizada desenvolvida em C# (Windows Forms). O projeto foca na detecção de ameaças através de verificação de integridade por Hash (SHA256) e análise heurística básica, apresentando uma interface moderna inspirada na estética do sistema operacional Ubuntu.
 
 ---
 
@@ -44,7 +44,7 @@ O **NOSBOR Security System** é uma solução de antivírus leve e customizada d
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU_USUARIO/Robson-Security.git](https://github.com/SEU_USUARIO/Robson-Security.git)
+    git clone [https://github.com/SEU_USUARIO/NR-Security.git](https://github.com/SEU_USUARIO/NR-Security.git)
     ```
 2.  **Configuração:** Verifique se o arquivo `signatures.json` está na mesma pasta do executável (`/bin/Debug`).
 3.  **Execução:** Compile o projeto no Visual Studio e inicie a varredura.
